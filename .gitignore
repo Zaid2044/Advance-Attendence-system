@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment (if you decide to use one later)
+venv/
+.venv/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# --- SENSITIVE & GENERATED DATA ---
+# This is the most important section.
+
+# The database file itself contains user and attendance data
+database/attendance.db
+
+# The training output file
+encodings.pickle
+
+# The folder containing all private student photos
+student_images/
+
+# The folder containing all generated reports
+reports/
+
+
+# --- PYINSTALLER BUILD FILES ---
+# Ignore all build output from PyInstaller
+dist/
+build/
+*.spec
