@@ -1,43 +1,99 @@
-# Real-Time Face Recognition Attendance System
+# 🎯 Advance Attendance System
 
-A robust, real-time attendance system that uses computer vision to detect and identify faces from a live webcam feed, automatically marking attendance and logging it with a timestamp.
-
----
-
-### Core Features
-
-- **Live Face Detection:** Utilizes OpenCV's Haar Cascade classifier for real-time face detection from a webcam stream.
-- **Accurate Face Recognition:** Employs the `face_recognition` library (built on dlib) to compare detected faces against a database of known individuals.
-- **Automated Attendance Logging:** When a known face is recognized, the system automatically records their name and the current timestamp into a CSV file.
-- **Simple & Efficient UI:** A clean interface displays the live camera feed with bounding boxes and names drawn on recognized faces.
+An intelligent face recognition–powered attendance solution with a live dashboard and real-time video stream. Built using OpenCV, MediaPipe, and Flask, this project blends computer vision and web technologies to create a fully functional desktop attendance system.
 
 ---
 
-### Tech Stack
+## ✨ Features
 
-- **Primary Language:** Python
-- **Computer Vision:** OpenCV (`opencv-python`)
-- **Face Recognition:** `face_recognition` (dlib)
-- **Data Handling:** Pandas, NumPy
-- **Core Libraries:** `csv`, `datetime`
-
----
-
-### Setup and Usage
-
-1. **Clone the repository.**
-2. **Create a folder named `ImagesAttendance`** and place images of the individuals you want to recognize inside. Name each image file with the person's name (e.g., `Name.jpg`).
-3. **Install dependencies:**
-   *(Note: Installing `dlib` and `face_recognition` can be complex. It may require installing `CMake` and C++ build tools first.)*
-   ```bash
-   pip install opencv-python numpy pandas face_recognition
-   ```
+* 📸 **Real-Time Face Recognition** using OpenCV and MediaPipe
+* 🖥️ **Desktop UI** for starting, stopping, and viewing attendance
+* 🧾 **Attendance Logging** to CSV with time and name tracking
+* 📊 **Live Web Dashboard** via Flask to monitor recognized faces
+* 💾 **Local Storage** for known face encodings
+* 🧠 **Easy to Train**: Just add face images to the folder, and the system learns them
 
 ---
 
-1. **Run the application:**
-  ```bash
-   python main.py
-  ```
+## 🛠 Tech Stack
 
-2. **The system will open a webcam window. When a recognized person appears, their attendance will be logged in Attendance.csv.**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-27338E?style=flat\&logo=opencv\&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-F57C00?style=flat\&logo=google\&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat\&logo=flask\&logoColor=white)
+![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=flat)
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/Zaid2044/Advance-Attendence-system.git
+cd Advance-Attendence-system
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don't have a `requirements.txt`, install manually:
+
+```bash
+pip install opencv-python mediapipe flask numpy
+```
+
+### 3. Add Training Images
+
+* Add clear front-facing face images to the `known_faces/` directory.
+* The filename (without extension) will be treated as the name of the person.
+
+### 4. Run the System
+
+```bash
+python app.py
+```
+
+Then open your browser at: [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 🧪 Demo Preview
+
+Coming soon — add screenshots of:
+
+* Face recognition UI
+* Attendance logs
+* Live dashboard
+
+---
+
+## 📁 Project Structure
+
+```
+Advance-Attendence-system/
+├── app.py
+├── known_faces/
+├── static/
+│   └── styles.css
+├── templates/
+│   └── dashboard.html
+├── attendance.csv
+└── requirements.txt
+```
+
+---
+
+## 🧑‍💻 Author
+
+** MOHAMMED ZAID AHMED**
+[![GitHub](https://img.shields.io/badge/GitHub-Zaid2044-181717?style=flat\&logo=github)](https://github.com/Zaid2044)
+
+---
+
+## 🪪 License
+
+MIT License
