@@ -89,7 +89,7 @@ Advance-Attendence-system/
 
 ## 🧑‍💻 Author
 
-** MOHAMMED ZAID AHMED**
+**MOHAMMED ZAID AHMED**
 [![GitHub](https://img.shields.io/badge/GitHub-Zaid2044-181717?style=flat\&logo=github)](https://github.com/Zaid2044)
 
 ---
