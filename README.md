@@ -70,15 +70,21 @@ Coming soon
 ## 📁 Project Structure
 
 ```
-Advance-Attendence-system/
-├── app.py
-├── known_faces/
-├── static/
-│   └── styles.css
-├── templates/
-│   └── dashboard.html
-├── attendance.csv
-└── requirements.txt
+Advance-Attendance-System/
+│
+├── .gitignore               # Ignored cache/files
+├── LICENSE                  # MIT License
+├── README.md                # Project overview
+│
+├── app_gui.py               # GUI-based control panel
+├── attendance_system.py     # Face recognition + attendance marking
+├── create_admin.py          # Script to register new admins
+├── database_manager.py      # SQLite DB management
+├── encodings.pickle         # Pre-trained face encodings
+├── face_training_engine.py  # Encodes and trains faces
+├── initial_setup.py         # DB/table initializer
+├── run_reporting.py         # Attendance reporting logic
+└── web_dashboard.py         # Flask web dashboard
 ```
 
 ---
