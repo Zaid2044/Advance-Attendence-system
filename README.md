@@ -63,11 +63,7 @@ Then open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ## 🧪 Demo Preview
 
-Coming soon — add screenshots of:
-
-* Face recognition UI
-* Attendance logs
-* Live dashboard
+Coming soon 
 
 ---
 
